@@ -1,7 +1,23 @@
 const Part1 = async (buffer) =>{
     const input = buffer.toString()
     const split = input.split('\n')
-    console.log(split)
+    let horizontal = 0
+    let vertical = 0
+    for(const command of split){
+        const values = command.split(' ')
+        if (values[0] == 'forward'){
+            horizontal+= parseInt(values[1])
+        }
+        if (values[0] == 'down'){
+            vertical += parseInt(values[1])
+        }
+        if (values[0] == 'up'){
+            vertical -= parseInt(values[1])
+        }
+    }
+    console.log('H:'+horizontal)
+    console.log('V:'+vertical)
+    console.log('Product:'+(horizontal*vertical))
 }
 
 export default Part1
