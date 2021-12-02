@@ -6,7 +6,7 @@ const Part1 = async (buffer) =>{
     for(const command of split){
         const values = command.split(' ')
         if (values[0] == 'forward'){
-            horizontal+= parseInt(values[1])
+            horizontal += parseInt(values[1])
         }
         if (values[0] == 'down'){
             vertical += parseInt(values[1])
