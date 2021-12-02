@@ -15,9 +15,9 @@ const Part1 = async (buffer) =>{
             vertical -= parseInt(values[1])
         }
     }
-    console.log('H:'+horizontal)
-    console.log('V:'+vertical)
-    console.log('Product:'+(horizontal*vertical))
+    console.log('H: '+horizontal)
+    console.log('V: '+vertical)
+    console.log('Product: '+(horizontal*vertical))
 }
 
 export default Part1
